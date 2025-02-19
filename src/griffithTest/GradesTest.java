@@ -10,6 +10,7 @@ import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 
 class GradesTest {
+	
 	@Test
 	public void testGradesMax() {
 		Grades grade = new Grades();
