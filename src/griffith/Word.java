@@ -4,7 +4,7 @@ public class Word {
 	private char[] letters;
 
     public Word(char[] letters) {
-        this.letters = letters;
+    	this.letters = (letters != null) ? letters : new char[]{};
     }
 
     public boolean contains(char symbol) {

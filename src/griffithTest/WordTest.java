@@ -1,28 +1,32 @@
 package griffithTest;
 
+import static org.junit.jupiter.api.Assertions.assertFalse;
+import static org.junit.jupiter.api.Assertions.assertTrue;
+import static org.junit.jupiter.api.Assertions.fail;
 import static org.junit.jupiter.api.Assertions.*;
-
-import org.junit.jupiter.api.AfterAll;
-import org.junit.jupiter.api.AfterEach;
-import org.junit.jupiter.api.BeforeAll;
-import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
+
+import griffith.Word;
 
 class WordTest {
 
 	@Test
     public void testContains() {
-        // Placeholder test
+		Word word = new Word(new char[]{'h', 'e', 'l', 'l', 'o'});
+        assertTrue(word.contains('h'));
+        assertFalse(word.contains('z'));
     }
 
     @Test
     public void testLength() {
-        // Placeholder test
+    	Word word = new Word(new char[]{'h', 'e', 'l', 'l', 'o'});
+    	assertEquals(5, word.length());
     }
 
     @Test
     public void testNotNull() {
-        // Placeholder test
+    	 Word word = new Word(new char[]{'h', 'e', 'l', 'l', 'o'});
+         assertNotNull(word.getLetters());
     }
 
 	@Test
