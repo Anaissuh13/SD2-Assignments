@@ -8,14 +8,17 @@ public class Word {
     }
 
     public boolean contains(char symbol) {
-        return false; // Placeholder
+    	for (char c : letters) {
+            if (c == symbol) return true;
+        }
+        return false;
     }
 
     public int length() {
-        return 0; // Placeholder
+    	return letters.length;
     }
 
     public char[] getLetters() {
-        return letters; // Placeholder
+        return letters;
     }
 }
