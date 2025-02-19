@@ -9,23 +9,26 @@ import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 
 class GradesTest {
+	@Test
+	public void testGradesMax() {
+        // Placeholder test
+    }
 
-	@BeforeAll
-	static void setUpBeforeClass() throws Exception {
-	}
+	@Test
+	public void testGradesTotal() {
+        // Placeholder test
+    }    
 
-	@AfterAll
-	static void tearDownAfterClass() throws Exception {
-	}
+	@Test
+	public void testGradesAverage() {
+        // Placeholder test
+    }
 
-	@BeforeEach
-	void setUp() throws Exception {
-	}
-
-	@AfterEach
-	void tearDown() throws Exception {
-	}
-
+	@Test
+	public void testCountFails() {
+        // Placeholder test
+    }
+	
 	@Test
 	void test() {
 		fail("Not yet implemented");
